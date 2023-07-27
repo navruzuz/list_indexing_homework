@@ -8,10 +8,10 @@ def main(list_num):
     """
     i=0
     while i<len(list_num):
-        if list_num[0]>list_num[-1]:
-            max=list_num[0]
+        if list_num[0]<list_num[-1]:
+            min=list_num[0]
         else:
-            max=list_num[-1]
+            min=list_num[-1]
         i+=1
-    return max
+    return min
 print(main([1,2,5,6]))
